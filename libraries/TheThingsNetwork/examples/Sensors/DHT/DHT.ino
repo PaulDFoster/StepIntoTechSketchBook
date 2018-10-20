@@ -11,14 +11,14 @@ const char *appKey = "00000000000000000000000000000000";
 #define debugSerial Serial
 
 // Replace REPLACE_ME with TTN_FP_EU868 or TTN_FP_US915
-#define freqPlan REPLACE_ME
+#define freqPlan TTN_FP_EU868
 
 #define DHTPIN 2
 
 //Choose your DHT sensor moddel
-//#define DHTTYPE DHT11
+#define DHTTYPE DHT11
 //#define DHTTYPE DHT21
-#define DHTTYPE DHT22
+//#define DHTTYPE DHT22
 
 DHT dht(DHTPIN, DHTTYPE);
 
